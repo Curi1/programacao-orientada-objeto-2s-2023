@@ -3,6 +3,8 @@ package atvidade2;
 import java.util.Scanner;
 
 public class Exercicio2 {
+
+    static String maedorodrigo = "Famosa dona elaine";
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -26,6 +28,8 @@ public class Exercicio2 {
                 result = fahrenheitToCelsius(fahrenheit);
                 System.out.println("Temperatura em Celsius: " + result);
                 break;
+            case 3:
+                System.out.println(comerCu());
             default:
                 System.out.println("Escolha inválida.");
                 System.exit(1);
@@ -41,4 +45,10 @@ public class Exercicio2 {
     public static double fahrenheitToCelsius(double fahrenheit) {
         return (fahrenheit - 32) * 5 / 9;
     }
+    
+    public static String comerCu(){
+        String maedorodrigo1 = maedorodrigo;
+        return maedorodrigo1;
+    }
+    
 }
